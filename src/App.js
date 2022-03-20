@@ -1,5 +1,5 @@
 import React from 'react';
-import Webpages from './webpages';
+import Webpages from './webpages/index1';
 
 function App() {
   return (
@@ -7,5 +7,6 @@ function App() {
       <Webpages />
     </div>
   );
-}
+};
 export default App;
+
