@@ -2,6 +2,9 @@
 import React, { useState, useEffect }  from 'react';
 import {useParams} from 'react-router-dom'
 import { Link } from 'react-router-dom';
+import profileImage from '../icons/idcard.png';
+import  './style.css';
+
 const User = props => {
    // var id = props.match.params.id
    let {id} = useParams();
@@ -34,8 +37,14 @@ const User = props => {
     if (user) {
         return (
             
-            <div>
-                <h1> <Link to={`/posts/${user.id}`}>{user.name}</Link></h1>
+            <div >
+                <div>
+                <img className="photo" src={profileImage} width/>
+                </div>
+                <div  className="h3">
+                <div>
+                <h1 > <Link to={`/posts/${user.id}`}>{user.name}</Link></h1>
+                </div>
                 <div>
                     Email: {user.email}
                 </div>
@@ -44,6 +53,7 @@ const User = props => {
                 </div>
                 <div>
                     Website: {user.website}
+                </div>
                 </div> 
                  </div> 
                       );
