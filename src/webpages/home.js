@@ -23,10 +23,10 @@ const Home = () => {const [error, setError] = useState(null);
         return <div>Loading...</div>;
     } else {
         return (
-            <ul>
+            <ul className='list'>
                 {users.map(user => (
-                <li> 
-                    <Link to={`user/${user.id}`}>{user.name}</Link>
+                <li > 
+                    <Link  to={`user/${user.id}`} style={{ textDecoration: "none" , color :"red"}}>{user.name}</Link>
                 </li>
                 ))}
             </ul>

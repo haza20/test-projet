@@ -41,7 +41,7 @@ const User = props => {
                 <div>
                 <img className="photo" src={profileImage} width/>
                 </div>
-                <div  className="h3">
+                <div className='card'> 
                 <div>
                 <h1 > <Link to={`/posts/${user.id}`}>{user.name}</Link></h1>
                 </div>
